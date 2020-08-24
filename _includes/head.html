@@ -1,0 +1,16 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {%- seo -%}
+  <link rel="shortcut icon" type="image/png" href="{{ "/assets/img/homepage.ico" | relative_url }}">
+  <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+  <link rel="stylesheet" href="{{ "/assets/css/98.css" | relative_url }}">
+  {%- feed_meta -%}
+  {%- if jekyll.environment == 'production' -%}
+    {%- include google-analytics.html -%}
+  {%- endif -%}
+  {% if page.style %} 
+    <link rel="stylesheet" href="{{ "/assets/css/" | append: page.style | append: ".css" | relative_url }}">
+  {% endif %}
+</head>

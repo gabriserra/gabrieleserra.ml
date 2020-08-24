@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {%- include head.html -%}
+
+  <body>
+
+    <div class="windows-container">
+      <div class="form windows windows-form">
+          <header class="windows-header">
+              <span class="windows-icon">
+                  <img src="{{ "/assets/img/ie.png" | relative_url }}">
+              </span>
+              <span>{{ site.title | escape }} {% if page.title %} - {{ page.title }} {% endif %}</span>
+              <span class="windows-button">
+                  <img src="{{ "/assets/img/close-icon.png" | relative_url }}">
+              </span>
+          </header>
+          <main class="form-content">
+            {%- include navbar.html -%}
+            {{ content }}
+          </main>
+      </div>
+    </div>
+
+    {%- include desktop.html -%}
+    {%- include footer.html -%}
+
+    <script type="text/javascript" src="{{ "/assets/js/jquery.min.js" | relative_url }}"></script>
+    <script type="text/javascript" src="{{ "/assets/js/main.js" | relative_url }}"></script>
+  </body>
+
+</html>

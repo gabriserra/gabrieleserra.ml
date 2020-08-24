@@ -1,0 +1,63 @@
+# Welcome to Jekyll!
+
+# Site settings
+title: Gabriele Serra's Webpage
+author: gabrieleserra
+email: gabriele_serra@hotmail.it
+description: >- # this means to ignore newlines until "baseurl:"
+  Ph.D. student at Scuola Superiore Sant'Anna, Pisa, Italy. Part of Real-Time 
+  Systems Laboratory (ReTiS) team. Co-founder and CTO at DeliveryAggregator.com 
+  an incorporated company specialized in food delivery.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+facebook_username: gabri.serra
+github_username:  gabriserra
+
+# Build settings
+timezone: Italy/Rome
+encoding: UTF-8
+theme: null
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Collections settings
+collections_dir: collections
+collections:
+  pages:
+    output: true
+    permalink: /:name
+  projects:
+    output: true
+    permalink: /projects/:path
+    sort_by: date
+  posts:
+    output: true
+    permalink: /blog/:path
+    sort_by: date
+  publications:
+    output: true
+    permalink: /publications/:path
+
+# Sets the collections path
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+  - scope:
+      path: "collections/_publications"
+    values:
+      layout: "page"
+      section: publications
+  - scope:
+      path: "collections/_publications/papers"
+    values:
+      publication_type: "paper"
+  - scope:
+      path: "collections/_publications/theses"
+    values:
+      publication_type: "thesis"
+
+# Exclude from processing
+exclude: [README.md, Gemfile, Gemfile.lock, LICENSE]

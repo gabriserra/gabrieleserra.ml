@@ -1,0 +1,397 @@
+
+/** 
+* ----------------------------------------------------------------------------
+*
+*  WINDOWS UI CSS
+*
+* ----------------------------------------------------------------------------
+*/
+
+/**
+* ----------------------------------------------------------------------------
+*  INDEX
+*   01 - FONT-SETUP     (font-face, import font..)
+*   02 - GENERAL        (html, body, buttons setup)
+*   03 - NAVBAR         (setup navigator bar)
+*   04 - WINDOWS        (setup windows element and window container)
+*   05 - UI-ICONS       (windows icon and desktop)
+*   06 - START-BAR      (style for bottom start bar)
+*   07 - MOBILE         (media queries)
+*
+* ----------------------------------------------------------------------------
+*/
+
+/** 
+* ------------------------------------------------------------------------------
+* FONT-SETUP
+* ------------------------------------------------------------------------------
+*/
+
+/** 
+* See: 
+*   - https://stackoverflow.com/questions/30683657/use-windows-95-font-on-webpage
+* Download: 
+*   - https://www.dafont.com/px-sans-nouveaux.font 
+*/
+@font-face {
+    font-family: px_sans_nouveaux;
+    src: url("../fonts/px_sans_nouveaux.ttf") format('truetype');
+}
+
+/** 
+* ------------------------------------------------------------------------------
+* GENERAL
+* ------------------------------------------------------------------------------
+*/
+
+html, body {
+    height: 100%;
+    overflow: hidden;
+}
+
+*, :after, :before, body, html {
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.5;
+    letter-spacing: -.025em;
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+    cursor: default;
+    color: rgba(255, 255, 255, .8);
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    transition: background-color 1s ease .5s, color 1s ease .5s;
+    font-family: px_sans_nouveaux;
+    background-color: teal
+}
+
+button {
+    border: 0;
+    cursor: pointer
+}
+
+a {
+    outline: 0;
+    text-decoration: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/** 
+* ------------------------------------------------------------------------------
+* NAVBAR
+* ------------------------------------------------------------------------------
+*/
+
+aside {
+    min-width: 150px;
+    top: 0;
+    bottom: 0;
+    padding: 8px;
+}
+  
+aside .tree-view {
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    z-index: 10;
+}
+
+/** 
+* ------------------------------------------------------------------------------
+* WINDOWS
+* ------------------------------------------------------------------------------
+*/
+
+.windows, body {
+    font-size: 15px;
+}
+
+.windows-button {
+    -webkit-appearance: none;
+}
+
+.windows {
+    overflow: hidden;
+}
+
+-webkit-scrollbar-thumb {
+    background-color: silver;
+    border-left: ridge 2px #fff;
+    border-top: ridge 2px #fff;
+    border-right: ridge 2px gray;
+    border-bottom: ridge 2px gray;
+}
+
+.windows, .windows-button {
+    font-family: Arial, sans-serif;
+}
+
+.windows-container, .windows-form {
+    margin: 0 auto;
+    height: 100%;
+}
+
+.windows-container {
+    width: 100%;
+    z-index: 2;
+    padding: 50px 80px 79px;
+    overflow: hidden;
+    position: relative;
+}
+
+.windows {
+    font-weight: 400;
+    letter-spacing: .025em;
+    background-color: #c6c6c6;
+    border-top: 2px solid #efefef;
+    border-left: 2px solid #efefef;
+    border-right: 2px solid #000;
+    border-bottom: 2px solid #000;
+    height: 100%;
+    position: relative;
+}
+
+.windows .windows-button {
+    color: #000;
+    background-color: silver;
+    position: relative;
+    z-index: 10;
+    float: right;
+}
+
+.windows .windows-button:active {
+    border-top: 2px solid #000;
+    border-left: 2px solid #000;
+    border-right: 2px solid #efefef;
+    border-bottom: 2px solid #efefef;
+}
+
+.windows-header {
+    height: 25px;
+    position: relative;
+    text-align: left;
+    color: #fff;
+    padding: .25em .75em;
+    line-height: 1;
+    border-top: 1px solid silver;
+    border-left: 1px solid silver;
+    border-right: 2px solid silver;
+    border-bottom: 1px solid silver;
+    background: linear-gradient(90deg,navy,#1084d0);
+    padding-right: 3px;
+}
+
+.windows-button {
+    display: block;
+    -moz-appearance: none;
+    appearance: none;
+    font-weight: 700;
+    letter-spacing: .05em;
+    padding: .45em .75em;
+    border-left: 2px solid #ededed;
+    border-top: 2px solid #ededed;
+    border-right: 2px solid #404040;
+    border-bottom: 2px solid #404040
+}
+
+.windows-header > .windows-button {
+    padding: 0; 
+    height: 16px;
+    width: 16px;
+    position: relative;
+}
+
+.windows-header .windows-button img {
+    position: absolute;
+    left: 1px;
+    top: 0px;
+}
+
+/** 
+* ------------------------------------------------------------------------------
+* UI ICONS
+* ------------------------------------------------------------------------------
+*/
+
+.ui-icon span {
+    text-align: center;
+    font-family: px_sans_nouveaux;
+    font-size: 8px;
+}
+
+.windows-button:active {
+    -webkit-transform: translate3d(0, 1px, 0);
+    transform: translate3d(0, 1px, 0);
+}
+
+.windows-button:focus {
+    outline: #000 dotted 1px;
+}
+
+.windows-icon {
+    padding: 0; 
+    height: 16px;
+    width: 16px;
+    position: relative;
+    background-color: initial;
+    float: left;
+    margin-right: 5px;
+}
+
+.windows-icon img {
+    position: absolute;
+    left: 1px;
+    top: 0px;
+}
+
+.form-content {
+    padding: 10px 10px 35px;
+    height:100%;
+    display: flex;
+}
+
+.ui-icon {
+    display: inline-block;
+}
+
+.ui-desktop {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 72px;
+    z-index: 9999;
+}
+
+.ui-icon {
+    text-align: center;
+    vertical-align: top;
+    width: 72px;
+    z-index: 0;
+    line-height: 15px;
+    margin: 0;
+    padding: 8px 1px;
+}
+
+.ui-icon-container {
+    position: relative;
+}
+
+.ui-icon span {
+    display: block;
+    padding: 4px 0 0;
+    color: white;
+}
+
+.ui-icon img {
+    width: 32px;
+    height: 32px;
+}
+
+/** 
+* ------------------------------------------------------------------------------
+* START BAR
+* ------------------------------------------------------------------------------
+*/
+
+.start-bar {
+    padding: 2px;
+    box-shadow: inset 1px 0 #fff;
+    display: block;
+    background-color: silver;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-top: 1px solid #f4f4f4;
+    border-bottom: 1px solid #4e4e4e;
+    position: fixed;
+    z-index: 99999;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.start-button {
+    background-image: url("../img/start-button.png");
+    background-repeat: no-repeat;
+    width: 45px;
+    height: 14px;
+}
+
+.start-button-wrapper {
+    float: left;
+    margin-left: 2px;
+    margin-bottom: 2px;
+    vertical-align: middle;
+    padding: 2px 6px 3px;
+    background-color: silver;
+    border-top: 1px solid #fff;
+    border-left: 1px solid #fff;
+    border-right: 1px solid gray;
+    border-bottom: 1px solid gray;
+    box-shadow: inset 1px 1px #dfdfdf, 1px 0 #000, 0 1px #000, 1px 1px #000;
+    min-width: 59px;
+    margin-right: 6px;
+    color: #000;
+}
+
+.start-bar-tray, .start-bar-window {
+    vertical-align: middle;
+    height: 22px;
+    line-height: 22px;
+    border-right: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    font-family: Arial;
+    font-weight: 400;
+    color: #000;
+}
+
+.start-bar-window {
+    float: left;
+    padding: 0 10px 0 6px;
+    border-top: 1px solid #000;
+    border-left: 1px solid #000;
+    box-shadow: inset 1px 1px grey;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAAG0lEQVQYV2M8cODAf3t7ewbG/////z948CADAFuqCj64BtLKAAAAAElFTkSuQmCC);
+}
+
+.start-bar-tray {
+    float: right;
+    text-align: right;
+    padding: 0 10px;
+    border-top: 1px solid gray;
+    border-left: 1px solid gray;
+}
+
+.start-bar-tray-speaker img {
+    width: 10px;
+    height: 10px;
+}
+
+/** 
+* ------------------------------------------------------------------------------
+* MOBILE STYLE
+* ------------------------------------------------------------------------------
+*/
+
+@media (max-width:768px) {
+    .windows-container {
+        padding: 10px 20px 40px;
+        max-width: 500px;
+    }
+}
+
+@media (max-width:630px) {
+    .ui-desktop {
+        display: none;
+    }
+    .form-content {
+        flex-direction: column;
+    }
+}
