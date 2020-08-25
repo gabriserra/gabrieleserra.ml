@@ -7,7 +7,7 @@ style: page
 link: /publications
 ---
 
-{% assign sorted_pub = site.publications | sort: 'date' | reverse %}
+{% assign pubs = site.publications | sort: 'date' | reverse %}
 
 <h2 id="interest">Research topics</h2>
 
