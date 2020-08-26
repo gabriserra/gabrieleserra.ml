@@ -49,7 +49,7 @@ link: /publications
                 {% endif %}
                 <li>
                     {{ pub.authors }}<br>
-                    <b>{{ pub.title }}</b><br>
+                    <b><a href="{{ pub.paper_link }}" target="_blank">{{ pub.title }}</a></b><br>
                     {{ pub.publication_name }}
                 </li>
                 {% endif %}
@@ -67,3 +67,35 @@ link: /publications
     agreement due to the involvement of an industrial company. Eventually, you 
     will find both ones.
 </p>
+
+<ul class="tree-view">
+    <li>List of publications</li>
+    {% assign year = "2019" %}
+    <li>
+        <details open="">
+            <summary>{{ year }}</summary>
+            <ul>
+            {% for pub in pubs %}
+                {% if pub.publication_type == "thesis" %}
+                {% assign pub_year = pub.date | date: "%Y" %}
+                {% if year != pub_year %}
+                    {% assign year = pub_year %}
+            </ul>
+        </details>
+    </li>
+    <li>
+        <details open="">
+            <summary>{{ year }}</summary>
+            <ul>
+                {% endif %}
+                <li>
+                    {{ pub.authors }}<br>
+                    <b><a href="{{ pub.paper_link }}" target="_blank">{{ pub.title }}</a></b><br>
+                    {{ pub.publication_name }}
+                </li>
+                {% endif %}
+            {% endfor %}
+            </ul>
+        </details>
+    </li>
+</ul>
