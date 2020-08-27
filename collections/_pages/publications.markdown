@@ -4,7 +4,7 @@
 section: publications
 layout: page
 style: page
-link: /publications
+permalink: /publications/
 ---
 
 {% assign pubs = site.publications | sort: 'date' | reverse %}

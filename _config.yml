@@ -28,13 +28,9 @@ collections:
   pages:
     output: true
     permalink: /:name
-  projects:
-    output: true
-    permalink: /projects/:path
-    sort_by: date
   posts:
     output: true
-    permalink: /blog/:path
+    permalink: /blog/:path:output_ext
     sort_by: date
   publications:
     output: true
