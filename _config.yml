@@ -17,6 +17,7 @@ github_username:  gabriserra
 timezone: Italy/Rome
 encoding: UTF-8
 theme: null
+highlighter: rouge
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
