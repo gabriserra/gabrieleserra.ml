@@ -7,6 +7,6 @@ institutions:
 date: 2013-07-01
 custom_date: Jul 01, 2013
 thesis: High School Diploma in Computer Science
-paper_link: /assets/documents/theses/serra-bachelor.pdf
+paper_link: /assets/documents/theses/serra-diploma.pdf
 language: ita
 ---

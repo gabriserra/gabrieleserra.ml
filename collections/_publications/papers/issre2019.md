@@ -13,7 +13,7 @@ pages: pp. 314-317
 editor: IEEE
 doi: https://doi.org/10.1109/ISSREW.2019.00090
 description: The growing complexity and the need for high safety standards in railways infrastructures are pushing the infrastructure operators toward the adoption of newer solutions able to exploit modern platforms and state-of-the-art software solutions while guaranteeing safety and timing constraints, and maintaining the compliance with the standards. This paper presents the design guidelines of a novel real-time kernel whose development is based on the Italian use case, highlighting its focus on adherence to the standards.
-paper_link: /assets/documents/papers/serra-issre2019.pdf
+paper_link: /assets/documents/papers/donnarumma-issre2019.pdf
 award: 
 award_link: 
 language: eng
