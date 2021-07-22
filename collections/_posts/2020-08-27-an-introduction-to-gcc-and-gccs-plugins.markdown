@@ -667,15 +667,13 @@ Also, 10 `NOPs` were added but shifted up by 5, then modifying the functions pla
 
 For sure, we have discovered that GCC's options are powerful but, at the same time, not enough if we need flexibility and performance. We need to understand something about GCC internals to exploit the power of GCC plugins. We will start from the basis.
 
-GCC (and, I think, almost all compilers) works analyzing code in subsequent phases called passes. At each pass, the compiler does some action, such as abstracting the representation of a program, optimizing data structures, etc. GCC organizes its compilation phase in mainly 7 passes[[12]](https://gcc.gnu.org/onlinedocs/gccint/Passes.html)
+GCC (and, I think, almost all compilers) works analyzing code in subsequent phases called passes. At each pass, the compiler does some action, such as abstracting the representation of a program, optimizing data structures, etc. GCC organizes its compilation phase in several passes[[12]](https://gcc.gnu.org/onlinedocs/gccint/Passes.html)
 
 - **Parsing pass**: The language front end turns text into bits.
 - **Gimplification pass**: The bits are turned into something we can optimize.
-- **Pass manager**: Sequencing the optimization passes.
 - **IPA passes**: Inter-procedural optimizations.
 - **Tree SSA passes**: Optimizations on a high-level representation.
 - **RTL passes**: Optimizations on a low-level representation.
-- **Optimization info**: Dumping optimization information from passes.
 
 I am all but an expert in this field, so if you want to dive deeper into the argument, refer to the GCC documentation. For our purposes, it is enough to check only some aspects.
 
