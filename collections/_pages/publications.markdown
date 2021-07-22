@@ -69,7 +69,7 @@ permalink: /publications/
 </p>
 
 <ul class="tree-view">
-    <li>List of publications</li>
+    <li>List of theses</li>
     {% assign year = "2019" %}
     <li>
         <details open="">

@@ -4,7 +4,7 @@ authors: Ciro Donnarumma, Pietro Fara, <strong>Gabriele Serra</strong>, Sandro D
 authors_affiliations: 2, 1, 1, 1, 1
 institutions:
   - Scuola Superiore Sant'Anna, Pisa, Italy
-  - Ericsson, Stockholm, Sweden
+  - Rete Ferroviaria Italiana, Italy
 date: 2019-10-29
 custom_date: Oct 28-31, 2019
 publication_name: Proceedings of the 30th International Symposium on Software Reliability Engineering Workshops (ISSREW 2019), Berlin, Germany 
