@@ -12,7 +12,7 @@ permalink: /publications/
 <h2 id="interest">Research topics</h2>
 
 <p>
-    During my Ph.D path I'm working to design software infrastructures that 
+    Currently I'm working to design software mechanisms that 
     take advantage of the virtualization capabilities offered by the underlying
     hardware. In particular, my research addresses the use of virtualization to
     increase the security of a system.
@@ -22,9 +22,7 @@ permalink: /publications/
 
 <p>
     Here you can find the list of article published on international conference
-    and workshop proceedings. The complete list of my publications and the PDFs 
-    are hosted on <a href="https://www.researchgate.net/profile/Gabriele_Serra2/research">Research Gate.</a>
-    Here below you can find a (per-year) summary.
+    and workshop proceedings. Here below you can find a (per-year) summary.
 </p>
 
 <ul class="tree-view">

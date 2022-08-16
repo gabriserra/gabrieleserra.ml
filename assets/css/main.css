@@ -293,6 +293,11 @@ aside .tree-view {
     height: 32px;
 }
 
+.inner-list {
+    margin-left: 15px;
+    font-family: "Pixelated MS Sans Serif";
+}
+
 /** 
 * ------------------------------------------------------------------------------
 * START BAR
