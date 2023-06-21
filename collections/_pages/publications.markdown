@@ -5,6 +5,7 @@ section: publications
 layout: page
 style: page
 permalink: /publications/
+title: Publications
 ---
 
 {% assign pubs = site.publications | sort: 'date' | reverse %}

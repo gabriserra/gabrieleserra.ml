@@ -107,8 +107,8 @@ button.active {
 }
 
 .window {
-  margin: 32px;
-  width: 250px;
+  margin: 10px;
+  width: 260px;
 }
 
 .window-shell p.shell-output {
@@ -154,4 +154,9 @@ button.active {
     width: 100%;
   }
   
+}
+
+.post-title {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }

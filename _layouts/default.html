@@ -13,7 +13,7 @@
               <span class="windows-icon">
                   <img src="{{ "/assets/img/ie.png" | relative_url }}">
               </span>
-              <span>{{ site.title | escape }} {% if page.title %} - {{ page.title }} {% endif %}</span>
+              <span>{{ site.title | escape }} {% if page.title %} - {{ page.title | truncate: 5 }} {% endif %}</span>
               <span class="windows-button">
                   <img src="{{ "/assets/img/close-icon.png" | relative_url }}">
               </span>
