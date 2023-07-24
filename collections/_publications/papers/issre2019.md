@@ -1,5 +1,5 @@
 ---
-title: En-50128 certification-oriented design of a safety-critical hard real-Time kernel
+title: EN-50128 Certification-Oriented Design of a Safety-Critical Hard Real-Time Kernel
 authors: Ciro Donnarumma, Pietro Fara, <strong>Gabriele Serra</strong>, Sandro Di Leonardi, Mauro Marinoni 
 authors_affiliations: 2, 1, 1, 1, 1
 institutions:

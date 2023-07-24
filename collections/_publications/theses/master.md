@@ -1,5 +1,5 @@
 ---
-title: Interprocess communication mechanismsand exception handling for a real-timesafety-critical kernel
+title: Interprocess communication mechanisms and exception handling for a real-time safety-critical kernel
 authors: <strong>Gabriele Serra</strong>
 authors_affiliations: 1
 institutions:
