@@ -39,6 +39,12 @@ title: Publications
     span > a.printed::after {
         background-image: url(/assets/img/padlock-icon.png);
     }
+    span > a.nominated::after {
+        background-image: url(/assets/img/nomination-icon.png);
+    }
+    span > a.awarded::after {
+        background-image: url(/assets/img/award-icon.png);
+    }
 </style>
 
 <ul class="tree-view">
@@ -70,6 +76,12 @@ title: Publications
                         {% endif %}
                         {% if pub.doi %}
                         [<a class="printed" href="{{ pub.doi }}" target="_blank"></a>]
+                        {% endif %}
+                        {% if pub.award_candidate %}
+                        [<a class="nominated" href="{{ pub.award_candidate_link }}" target="_blank" alt="Best paper award candidate"></a>]
+                        {% endif %}
+                        {% if pub.award %}
+                        [<a class="awarded" href="{{ pub.award_link }}" target="_blank" alt="Best paper award awarded"></a>]
                         {% endif %}
                     </span>
                     <br>
@@ -112,7 +124,7 @@ title: Publications
             <ul>
                 {% endif %}
                 <li>
-                    {{ pub.authors }}<br>
+                    {{ pub.thesis }}<br>
                     <b><a href="{{ pub.paper_link }}" target="_blank">{{ pub.title }}</a></b><br>
                     {{ pub.publication_name }}
                 </li>
