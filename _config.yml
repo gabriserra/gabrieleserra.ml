@@ -5,9 +5,9 @@ title: Gabriele Serra's Webpage
 author: gabrieleserra
 email: gabriele_serra@hotmail.it
 description: >- # this means to ignore newlines until "baseurl:"
-  Ph.D. student at Scuola Superiore Sant'Anna, Pisa, Italy. Part of Real-Time 
-  Systems Laboratory (ReTiS) team. Co-founder and CTO at DeliveryAggregator.com 
-  an incorporated company specialized in food delivery.
+  Research Engineer @ Accelerat, working on safety & security.
+  Affiliate Professional at Scuola Superiore Sant'Anna, Pisa, Italy.
+  Sometimes I write about low-level computer stuff!
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 facebook_username: gabri.serra
